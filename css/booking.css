@@ -16,18 +16,6 @@ body {
     border-style: solid;
     box-shadow: 0 0 10px;
 }
-  
-.form {
-float: left;
-margin-left: 5%;
-width: 40%
-}
-  
-.info {
-float: left;
-margin-left: 10%;
-width: 40%
-}
 
 #nextshift {
 font-weight: bold;
