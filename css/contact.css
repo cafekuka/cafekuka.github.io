@@ -18,15 +18,8 @@ input {
     display: inline-block;
 }
 
-button {
-    width: 100%;
-    padding: 12px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    display: inline-block;
-    background-color: #6c9abb;
-    color: #f2f2f2;
+input:focus {
+    outline: solid 1px #6c9abb;
 }
 
 textarea {
@@ -40,4 +33,19 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
     display: inline-block;
+}
+
+textarea:focus {
+    outline: solid 1px #6c9abb;
+}
+
+button {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color: #6c9abb;
+    color: #f2f2f2;
 }
