@@ -13,3 +13,12 @@ body {
   font-family: proximaNova;
   src: url(../assets/proxima_nova.otf);
 }
+
+.center {
+  text-align: center;
+}
+
+.header {
+  margin: 0;
+  font-size: 2em;
+}
