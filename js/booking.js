@@ -1,22 +1,31 @@
 
 
 // Get minutes since the day started in Canary islands timezone, accurate regardless daylight saving time
+// also get day
 let options = {
     timeZone: 'Atlantic/Canary',
     hour: 'numeric',
-    minute: 'numeric'
+    minute: 'numeric',
+    weekday: 'long'
   },
-formatter = new Intl.DateTimeFormat([], options);
-let [h, m] = formatter.format(new Date()).split(":").map(e=>Number(e));
+formatter = new Intl.DateTimeFormat('es-es', options);
+
+let [d, t] = formatter.format(new Date()).split(", ");
+let [h, m] = t.split(":").map(e=>Number(e));
 let mins = (h*60+m)
 //
 
 let ns = "Desconocido"
-if (mins < 690) {
-    ns = "el recreo"
-} else if (mins < 900) {
-    ns = "las 15:00 - 17:00"
+
+if ((d == "sábado" || d == "domingo") || (d == "viernes" && mins >= 900)) {
+    ns = "el recreo del siguiente lunes"
 } else {
-    ns = "el recreo de mañana"
+    if (mins < 690) {
+        ns = "el recreo"
+    } else if (mins < 900) {
+        ns = "las 15:00 - 17:00"
+    } else {
+        ns = "el recreo de mañana"
+    }
 }
 document.getElementById("nextshift").innerHTML = ns
