@@ -8,3 +8,8 @@ body {
   font-family: buttershineSerif;
   src: url(../assets/buttershine_serif.otf);
 }
+
+@font-face {
+  font-family: proximaNova;
+  src: url(../assets/proxima_nova.otf);
+}
