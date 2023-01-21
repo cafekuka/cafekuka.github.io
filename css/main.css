@@ -58,3 +58,22 @@ body {
   margin: auto;
   width: 40%
 }
+
+@media only screen and (max-device-width: 480px) {
+  .left-box {
+    float: left;
+    margin-left: 3%;
+    width: 47%
+  }
+    
+  .right-box {
+    float: left;
+    margin-left: 3%;
+    width: 47%
+  }
+    
+  .center-box {
+    margin: auto;
+    width: 75%
+  }
+}
