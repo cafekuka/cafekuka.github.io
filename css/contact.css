@@ -28,3 +28,16 @@ button {
     background-color: #6c9abb;
     color: #f2f2f2;
 }
+
+textarea {
+    overflow: hidden;
+    font-family: Arial;
+    resize: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
