@@ -3,11 +3,11 @@ body {
     background-size: cover;
 }
 
-p {
+container > p {
     margin-bottom: 0;
 }
 
-p > a {
+container > p > a {
     color: #347aeb;
     text-decoration: none;
     border-bottom: 1px solid;
