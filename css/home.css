@@ -3,6 +3,10 @@ body {
     background-size: cover;
 }
 
+.container {
+    top: 20% !important;
+}
+
 .container > p {
     margin-bottom: 0;
 }
@@ -11,4 +15,14 @@ body {
     color: #347aeb;
     text-decoration: none;
     border-bottom: 1px solid;
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        height: calc(100% + 4em);
+    }
+
+    .container {
+        top: 6em !important;
+    }
 }
