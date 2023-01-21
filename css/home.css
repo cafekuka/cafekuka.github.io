@@ -2,3 +2,13 @@ body {
     background-image: url(/assets/heartbg.png);
     background-size: cover;
 }
+
+p {
+    margin-bottom: 0;
+}
+
+p > a {
+    color: #347aeb;
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
