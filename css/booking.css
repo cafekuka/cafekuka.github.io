@@ -22,7 +22,7 @@ ul.schedule {
         font-size: 0.9em;
         top: 30vh !important;
         margin: 15 auto;
-        width: 90%;
-        float: none;
+        width: 90% !important;
+        float: none !important;
     }
 }
