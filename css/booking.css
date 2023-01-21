@@ -12,3 +12,17 @@ ul.schedule {
     margin: 0;
     font-size: 1.2em;
 }
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        height: calc(100% + 4em);
+    }
+
+    .container {
+        font-size: 0.9em;
+        top: 30vh !important;
+        margin: 15 auto;
+        width: 90%;
+        float: none;
+    }
+}
