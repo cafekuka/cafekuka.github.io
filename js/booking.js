@@ -1,0 +1,1 @@
+document.getElementById("nextshift").innerHTML = "el recreo"
