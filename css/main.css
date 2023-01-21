@@ -23,6 +23,11 @@ body {
   font-size: 2em;
 }
 
+.subheader {
+  margin: 0;
+  font-size: 1.2em;
+}
+
 .container {
   background-color: #f2f2f2;
   border-radius: 25px;
