@@ -21,7 +21,7 @@ ul.schedule {
     .container {
         font-size: 0.9em;
         top: 30vh !important;
-        margin: 15 auto;
+        margin: 15 auto !important;
         width: 90% !important;
         float: none !important;
     }

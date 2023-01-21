@@ -59,7 +59,8 @@ body {
   width: 40%
 }
 
-@media only screen and (max-device-width: 480px) {    
+@media only screen and (max-device-width: 480px) {
+
   .center-box {
     margin: auto;
     width: 75%
