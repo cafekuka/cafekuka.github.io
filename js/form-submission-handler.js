@@ -56,10 +56,11 @@
       var formData = getFormData(form);
       var data = formData.data;
   
-      // If a honeypot field is filled, assume it was done so by a spam bot.
+      /* Honeypot to avoid spam bots, disabled as I'm lazy to set it up
       if (formData.honeypot) {
         return false;
       }
+      */
   
       disableAllButtons(form);
       var url = form.action;
@@ -74,9 +75,9 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
-            var thankYouMessage = form.querySelector(".thankyou_message");
-            if (thankYouMessage) {
-              thankYouMessage.style.display = "block";
+            var formmsg = form.querySelector(".message");
+            if (formmsg) {
+                formmsg.style.display = "block";
             }
           }
       };
