@@ -75,11 +75,15 @@
         function handleFormSubmit(event) {
             event.preventDefault();
             let regname = event.target.name.value;
+            /*
             push(child(ref(db), "reservas"), {name: regname}).then(e=>{
               $(".regname").html(regname);
               $(".booking").css("display", "none");
               $(".done").css("display", "block");
             });
+            */
+            let pkey = push(child(ref(db), "conf"), +Date.now()).key
+            update(child(ref(db), "reservas/"+pkey), {name: regname})
         }
 
         document.getElementById("form").addEventListener("submit", handleFormSubmit, false);
