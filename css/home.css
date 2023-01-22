@@ -29,6 +29,7 @@ body {
 @media only screen and (max-device-width: 480px) {
     body {
         height: calc(100% + 14em);
+        background-image: url(/assets/mobile_heartbg.png);
     }
 
     .container {

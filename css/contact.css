@@ -58,3 +58,9 @@ button:hover {
     transition: background-color 0.5s, box-shadow 0.5s;
     box-shadow: 0 0 6px 0px #939393;
 }
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        background-image: url(/assets/mobile_userbg.png);
+    }
+}
