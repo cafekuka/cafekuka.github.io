@@ -11,18 +11,24 @@
     <div class="left-box container">
       <div class="booking">
         <div class="subheader center">Reserva ahora</div>
-        <div class="center">para <span id="nextshift">el recreo del siguiente lunes</span>
+        <div class="center">para <span class="nextshift">Desconocido</span>
         </div>
-        <form class="form">
+        <form id="form">
           <label for="name">Nombre <span title="Campo obligatorio" style="color: red;">*</span></label>
           <input id="name" name="name" onkeydown="return event.key != 'Enter';" required />
-          <button class="button">Reserva</button>
+          <button id="bookbtn" class="button">Reserva</button>
         </form>
       </div>
       <div class="full" style="display: none;">
         <div class="center" style="font-size: 1.3em;">Todas las plazas han sido reservadas!
           <br>
           Por favor vuelva más tarde. 
+        </div>
+      </div>
+      <div class="done" style="display: none;">
+        <div class="center" style="font-size: 1.3em;">¡Gracias por reservar plaza!
+          <br><br>
+          Plaza reservada para <span class="nextshift">Desconocido</span> a nombre de Nombre
         </div>
       </div>
     </div>
@@ -61,6 +67,10 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
+
+        push(child(ref(db), "reservas"), {name: "Nombre"}).then(e=>{
+          console.log(e)
+        })
 
         window.app = app
         window.db = db

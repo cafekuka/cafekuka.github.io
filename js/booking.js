@@ -28,4 +28,15 @@ if ((d == "sábado" || d == "domingo") || (d == "viernes" && mins >= 900)) {
         ns = "el recreo de mañana"
     }
 }
-document.getElementById("nextshift").innerHTML = ns
+$('.leg-number').html(ns);
+
+
+function handleFormSubmit(event) {
+    event.preventDefault();
+    var form = event.target;
+    var formData = getFormData(form);
+    var data = formData.data;
+
+}
+
+document.getElementById("form").addEventListener("submit", handleFormSubmit, false);
