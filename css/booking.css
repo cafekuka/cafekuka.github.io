@@ -51,13 +51,21 @@ textarea:focus {
 button {
     width: 100%;
     padding: 12px 20px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 4px;
     box-sizing: border-box;
     display: inline-block;
-    background-color: #6c9abb;
+    background-color: #4b6b82;
     color: #f2f2f2;
     font-size: 1.2em;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #3c596f;
+    transition: background-color 0.5s, box-shadow 0.5s;
+    box-shadow: 0 0 6px 0px #939393;
 }
 
 
