@@ -28,7 +28,7 @@
       <div class="done" style="display: none;">
         <div class="center" style="font-size: 1.3em;">¡Gracias por reservar plaza!
           <br><br>
-          Plaza reservada para <span class="nextshift">Desconocido</span> a nombre de Nombre
+          Plaza reservada para <span class="nextshift">Desconocido</span> a nombre de <span class="regname">Desconocido</span>
         </div>
       </div>
     </div>
@@ -68,9 +68,7 @@
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
 
-        push(child(ref(db), "reservas"), {name: "Nombre"}).then(e=>{
-          console.log(e)
-        })
+        
 
         window.app = app
         window.db = db

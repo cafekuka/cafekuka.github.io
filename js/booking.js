@@ -33,10 +33,11 @@ $('.nextshift').html(ns);
 (()=>{
 function handleFormSubmit(event) {
     event.preventDefault();
-    document.getElementsByClassName("booking")[0].style.display = "none";
-    document.getElementsByClassName("done")[0].style.display = "block";
-    //$(".booking").css("display", "none")
-    //$(".booking").css("display", "none")
+    //document.getElementsByClassName("booking")[0].style.display = "none";
+    //document.getElementsByClassName("done")[0].style.display = "block";
+    $(".regname").html(e.target.name.value);
+    $(".booking").css("display", "none");
+    $(".done").css("display", "block");
 }
 
 document.getElementById("form").addEventListener("submit", handleFormSubmit, false);
