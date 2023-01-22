@@ -71,8 +71,8 @@
         
         
         
-        (()=>{
-        function handleFormSubmit(event) {
+        (async ()=>{
+        async function handleFormSubmit(event) {
             event.preventDefault();
             let regname = event.target.name.value;
             /*
@@ -82,7 +82,7 @@
               $(".done").css("display", "block");
             });
             */
-            let pkey = push(child(ref(db), "conf"), {ts: +Date.now()}).key
+            let pkey = await push(child(ref(db), "conf"), {ts: +Date.now()}).key
             update(child(ref(db), "reservas/"+pkey), {name: regname})
             $(".regname").html(regname);
             $(".booking").css("display", "none");
