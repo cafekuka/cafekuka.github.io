@@ -33,8 +33,8 @@ $('.nextshift').html(ns);
 (()=>{
 function handleFormSubmit(event) {
     event.preventDefault();
-    document.getElementsByClassName("booking").style.display = "none";
-    document.getElementsByClassName("done").style.display = "block";
+    document.getElementsByClassName("booking")[0].style.display = "none";
+    document.getElementsByClassName("done")[0].style.display = "block";
     //$(".booking").css("display", "none")
     //$(".booking").css("display", "none")
 }
