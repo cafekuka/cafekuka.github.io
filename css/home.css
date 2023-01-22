@@ -17,6 +17,15 @@ body {
     border-bottom: 1px solid;
 }
 
+.logo {
+    float: right;
+    height: 2.8em;
+}
+
+.logo > img {
+    height: inherit;
+}
+
 @media only screen and (max-device-width: 480px) {
     body {
         height: calc(100% + 4em);
