@@ -33,9 +33,6 @@ $('.nextshift').html(ns);
 (()=>{
 function handleFormSubmit(event) {
     event.preventDefault();
-    var form = event.target;
-    var formData = getFormData(form);
-    var data = formData.data;
     document.getElementsByClassName("booking").style.display = "none";
     document.getElementsByClassName("done").style.display = "block";
     //$(".booking").css("display", "none")
