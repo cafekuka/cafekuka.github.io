@@ -8,7 +8,15 @@
   </head>
   <body>
     <div id="navbar" data-active="booking"></div>
-    <div class="left-box container">Reserva ahora para <span id="nextshift"></span></div>
+    <div class="left-box container">
+      <div class="center">Reserva ahora para <span id="nextshift">el recreo del siguiente lunes</span>
+      </div>
+      <form class="form">
+        <label for="name">Nombre <span title="Campo obligatorio" style="color: red;">*</span></label>
+        <input id="name" name="name" onkeydown="return event.key != 'Enter';" required />
+        <button class="button">Enviar</button>
+      </form>
+    </div>
     <div class="right-box container">
       <h1 class="header center">Horarios</h1>
       <br>
