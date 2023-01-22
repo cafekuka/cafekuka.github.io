@@ -83,11 +83,10 @@
             });
             */
             let pkey = push(child(ref(db), "conf"), {ts: +Date.now()}).key
-            update(child(ref(db), "reservas/"+pkey), {name: regname}).then(()=>{
-              $(".regname").html(regname);
-              $(".booking").css("display", "none");
-              $(".done").css("display", "block");
-            })
+            update(child(ref(db), "reservas/"+pkey), {name: regname})
+            $(".regname").html(regname);
+            $(".booking").css("display", "none");
+            $(".done").css("display", "block");
         }
 
         document.getElementById("form").addEventListener("submit", handleFormSubmit, false);
