@@ -35,7 +35,7 @@ function handleFormSubmit(event) {
     event.preventDefault();
     //document.getElementsByClassName("booking")[0].style.display = "none";
     //document.getElementsByClassName("done")[0].style.display = "block";
-    $(".regname").html(e.target.name.value);
+    $(".regname").html(event.target.name.value);
     $(".booking").css("display", "none");
     $(".done").css("display", "block");
 }
