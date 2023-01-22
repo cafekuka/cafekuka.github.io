@@ -75,6 +75,10 @@
             if (formElements) {
               formElements.style.display = "none"; // hide form
             }
+            var adv = form.querySelector(".adv")
+            if (adv) {
+              adv.style.display = "none"; // hide form
+            }
             var formmsg = form.querySelector(".message");
             if (formmsg) {
                 formmsg.style.display = "block";
