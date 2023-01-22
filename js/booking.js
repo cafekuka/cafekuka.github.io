@@ -28,7 +28,7 @@ if ((d == "sábado" || d == "domingo") || (d == "viernes" && mins >= 900)) {
         ns = "el recreo de mañana"
     }
 }
-$('.leg-number').html(ns);
+$('.nextshift').html(ns);
 
 
 function handleFormSubmit(event) {
