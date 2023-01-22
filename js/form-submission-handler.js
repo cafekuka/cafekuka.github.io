@@ -73,13 +73,13 @@
             form.reset();
             var formElements = form.querySelector(".form-elements")
             if (formElements) {
-              formElements.style.display = "none"; // hide form
+              formElements.parentElement.style.display = "none"; // hide form
             }
-            var adv = form.querySelector(".adv")
+            var adv = form.parentElement.querySelector(".adv")
             if (adv) {
-              adv.style.display = "none"; // hide form
+              adv.style.display = "none"; // hide info messages above form
             }
-            var formmsg = form.querySelector(".message");
+            var formmsg = form.parentElement.querySelector(".message");
             if (formmsg) {
                 formmsg.style.display = "block";
             }
