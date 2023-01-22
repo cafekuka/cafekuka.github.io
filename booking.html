@@ -69,6 +69,21 @@
         const db = getDatabase(app);
 
         
+        
+        
+        (()=>{
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            let regname = event.target.name.value;
+            push(child(ref(db), "reservas"), {name: regname}).then(e=>{
+              $(".regname").html(regname);
+              $(".booking").css("display", "none");
+              $(".done").css("display", "block");
+            });
+        }
+
+        document.getElementById("form").addEventListener("submit", handleFormSubmit, false);
+        })();
 
         window.app = app
         window.db = db

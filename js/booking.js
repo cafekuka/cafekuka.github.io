@@ -29,16 +29,3 @@ if ((d == "sábado" || d == "domingo") || (d == "viernes" && mins >= 900)) {
     }
 }
 $('.nextshift').html(ns);
-
-(()=>{
-function handleFormSubmit(event) {
-    event.preventDefault();
-    //document.getElementsByClassName("booking")[0].style.display = "none";
-    //document.getElementsByClassName("done")[0].style.display = "block";
-    $(".regname").html(event.target.name.value);
-    $(".booking").css("display", "none");
-    $(".done").css("display", "block");
-}
-
-document.getElementById("form").addEventListener("submit", handleFormSubmit, false);
-})();
