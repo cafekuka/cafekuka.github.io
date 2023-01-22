@@ -28,7 +28,7 @@ body {
 
 @media only screen and (max-device-width: 480px) {
     body {
-        height: calc(100% + 4em);
+        height: calc(100% + 14em);
     }
 
     .container {
