@@ -71,7 +71,6 @@ button:hover {
 
 @media only screen and (max-device-width: 480px) {
     body {
-        height: calc(100% + 4em);
         background-image: url(/assets/mobile_clockbg.png);
     }
 
